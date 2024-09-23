@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 const COINGECKO_API_URL = "https://api.coingecko.com/api/v3";
 const PORK_ID = "pepefork";
 
