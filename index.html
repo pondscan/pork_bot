@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$PORK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fea7dd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 500px;
+            min-height: 500px; /* Changed from height to min-height */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-between; /* Changed from flex-start to space-between */
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 10px; /* Reduced from 15px */
+        }
+        .token-icon {
+            width: 48px;  /* Increased from 40px (20% increase) */
+            height: 48px; /* Increased from 40px (20% increase) */
+            border-radius: 50%;
+            margin-right: 12px; /* Slightly increased margin to maintain proportions */
+        }
+        h1 {
+            margin: 0;
+            font-family: 'Anton', sans-serif;
+            text-align: center;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 48px;
+            color: white;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px; /* Reduced from 20px */
+            width: 100%;
+        }
+        .stat-item {
+            flex: 1;
+            text-align: center;
+        }
+        .label {
+            display: inline-block;
+            font-size: 14px;
+            color: black;
+            background-color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            margin-bottom: 6px; /* Reduced from 8px */
+        }
+        .value {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+        .price-changes .value {
+            font-size: 18px;
+        }
+        .positive { color: #4caf50; }
+        .negative { color: #f44336; }
+        .timestamp {
+            text-align: center;
+            font-size: 12px;
+            color: white;
+            margin-top: auto; /* Push timestamp to the bottom */
+            line-height: 1.4;
+        }
+        #sparkline {
+            display: block;
+            margin: 10px auto; /* Reduced from 15px */
+            width: 55%;
+            height: 100px;
+        }
+        .data-container {
+            width: 100%;
+        }
+        sup {
+            font-size: 0.7em;
+            vertical-align: super;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>$PORK</h1>
+        </div>
+        <canvas id="sparkline"></canvas>
+        <div id="data-container" class="data-container"></div>
+        <div id="timestamp" class="timestamp"></div>
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="fetch.js"></script>
+</body>
+</html>
