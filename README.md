@@ -18,7 +18,7 @@ To run this bot, you will need:
 - An Alchemy API key (if using for Ethereum-related data)
 
 ### Forking the Repository
-1. Go to the [pork_bot GitHub repository](https://github.com/pondscan/pork_bot).
+1. Go to the [pork_bot repo](https://github.com/pondscan/pork_bot).
 2. Click on the "Fork" button in the top right corner of the page.
 3. Clone your forked repository to your local machine:
    ```bash
