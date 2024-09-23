@@ -54,4 +54,4 @@ To run this bot, you will need:
 - The bot is set up to run automatically every hour using GitHub Actions. You can check the `.github/workflows/tweet-pork-stats.yml` file for the schedule configuration.
 
 ## Contact
-I am available for hire to build Twitter bots and automation solutions. Feel free to reach out to me on X (formerly Twitter) at [@pondscan](https://twitter.com/pondscan).
+I am available for hire to build Twitter bots and automation solutions. Feel free to reach out to me on X at [@pondscan](https://twitter.com/pondscan).
