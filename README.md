@@ -14,8 +14,8 @@ The $PORK Twitter Bot is an automated tool designed to fetch and display real-ti
 To run this bot, you will need:
 - A GitHub account
 - A Twitter Developer account to access the Twitter API
-- A CoinGecko API key (optional, depending on your usage)
-- An Alchemy API key (if using for Ethereum-related data)
+- A CoinGecko API key
+- An Alchemy API key (optional, depending on usage)
 
 ### Forking the Repository
 1. Go to the [pork_bot repo](https://github.com/pondscan/pork_bot).
